@@ -1,4 +1,4 @@
-import react from 'react'; // eslint-disable-next-line
+import React from 'react'; 
 import './Notifications.css';
 
 function Notifications() {
