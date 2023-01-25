@@ -1,0 +1,37 @@
+.App {
+  height: 120vh;
+  max-width: 120vw;
+  --border-bottom: 5px solid #e0354b;
+  --padding: 1.3rem;
+  --heading-font-size: 1.4rem;
+  --gen-font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header {
+  display: flex;
+  padding:var(--padding);
+  align-items: center;
+  font-size: var(--heading-font-size);
+  color: #e0354b;
+  border-bottom: var(--border-bottom);
+}
+
+.App-header img {
+  width: 250px;
+  height: 250px;
+}
+
+.App-body {
+  font-size: var(--gen-font-size);
+  padding: 2.4rem;
+  border-bottom: var(--border-bottom);
+  height: 45%;
+}
+
+.App-footer {
+  font-size: var(--gen-font-size);
+  padding: var(--padding);
+  text-align: center;
+  font-style: italic;
+}
