@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Notification from '../Notifications/Notifications';
@@ -9,6 +8,7 @@ import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBot
 import BodySection from '../BodySection/BodySection';
 import { getLatestNotification } from '../utils/utils';
 import PropTypes from 'prop-types';
+import { StyleSheet, css } from 'aphrodite';
 
 
 class App extends React.Component {
@@ -67,6 +67,25 @@ class App extends React.Component {
     );
   }
 }
+
+const bodyStyles =StyleSheet.create({
+  App: {
+    position: 'relative',
+    minHeight: '100vh'
+  }
+});
+
+const footerStyles = StyleSheet.create({
+  Footer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderTop: '3px solid #E11D3F',
+    padding: '1rem',
+    fontStyle: 'italic',
+  }
+})
 
 App.defaultProps = {
   isLoggedIn: false,
