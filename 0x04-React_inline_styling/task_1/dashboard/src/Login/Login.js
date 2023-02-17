@@ -1,5 +1,5 @@
-import React from 'react';
-import './Login.css';
+im
+import {StyleSheet, css } from 'aphrodite';
 
 function Login() {
   return (
@@ -15,5 +15,15 @@ function Login() {
     </React.Fragment>
   )
 }
+
+const loginStyles = StyleSheet.create({
+  appBody: {
+    padding: '36px 24px'
+  },
+
+  inputs: {
+    margin: '0 16px 0 8px'
+  }
+})
 
 export default Login;
